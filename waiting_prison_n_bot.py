@@ -54,7 +54,7 @@ async def main(test_mode=False):
 
 if __name__ == '__main__':
     import sys
-    test = False
+    test = True
     if len(sys.argv) > 1 and sys.argv[1] == 'test':
         test = True
     asyncio.run(main(test_mode=test))
