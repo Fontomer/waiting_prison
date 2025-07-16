@@ -5,6 +5,8 @@ from telegram import Bot
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.cron import CronTrigger
 import aiofiles
+from pytz import timezone
+scheduler = AsyncIOScheduler(timezone=timezone("Asia/Yekaterinburg"))
 
 # === НАСТРОЙКИ ===
 TOKEN = '7845152168:AAEL64jqb8ZCTO6hFwOgvZnZN5_-pBF1evk'
