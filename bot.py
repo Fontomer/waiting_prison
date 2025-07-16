@@ -51,3 +51,7 @@ async def main(test_mode=False):
         logging.info("Бот запущен. Ждём никича...")
         while True:
             await asyncio.sleep(60)
+if __name__ == '__main__':
+    asyncio.run(main())
+
+
