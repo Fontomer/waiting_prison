@@ -32,7 +32,7 @@ async def increment_day_count():
 
 async def send_daily_message():
     count = await get_day_count()
-    message = f"ждем никитоса день {count}"
+    message = f"ждем никитоса {count}/1642 дней"
     try:
         await bot.send_message(chat_id=CHAT_ID, text=message)
         logging.info(f"✅ Отправлено: {message}")
